@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+/*
+    # = id
+    . = class
+    : = pseudo-class
+    :: = pseudo-element
+    > = children
+*/
+
+body {
+    background-color: rgb(170, 169, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(71, 48, 97);
+}
+
+h1#principal {
+    text-align: center;
+    background-color: rgb(0, 0, 85);
+    color: white;
+}
+
+h2 {
+    color: rgb(52, 144, 248);
+}
+
+.intermediario {
+    color: rgb(252, 252, 126);
+}
+
+.avançado {
+    color: rgb(255, 110, 110);
+}
+
+.destaque {
+    background-color: oldlace;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:visited {
+    color: rgb(255, 0, 0);
+}
+
+a:hover {
+    color: chartreuse;
+    text-decoration: underline;
+}
+
+a:active {
+    color: rgb(229, 255, 0);
+}
+
+.especial::before {
+    content: '[link]';
+    text-decoration: none;
+    font-weight: none;
+    color: black;
+}
+
+.especial::after {
+    content: '[link]';
+    text-decoration: none;
+    font-weight: none;
+    color: rgb(0, 0, 0);
+}
+
+.especial {
+    background-color: rgb(112, 250, 255);
+}
